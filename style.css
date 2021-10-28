@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: aqua;
+}
+
+h1, h2, h3, h4{
+    color: #fff;
+}
+
+p{
+    color: orange;
+}
+
+ul li {
+    color: orange;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
