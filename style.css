@@ -1,21 +1,89 @@
-body{
-    background-color: black;
-    color: aqua;
-}
-
 h1, h2, h3, h4{
-    color: #fff;
+    color: black;
+    font-family: monospace;
 }
 
-p{
-    color: orange;
+body{
+    background-image: linear-gradient(black,gray, black);
+    color: darkblue;
+}
+
+#container{
+    margin: 32px;
+    padding: 32px;
+    background-color: burlywood;
+    border-radius: 25px;
+}
+
+ul{
+    margin: 0 0 25px 0;
 }
 
 ul li {
-    color: orange;
+    list-style-type: none;
+    padding: 5px 0;
 }
 
 a{
-    color: red;
+    color: rgb(56, 56, 220);
     text-decoration: none;
 }
+
+a:hover {
+    color:rgb(172, 5, 60);
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+button{
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px;
+}
+button:hover{
+    background: burlywood;
+}
+
+.titulos{
+    margin-top: 15px;
+    margin-bottom: 5px; 
+}
+
+.linha{
+    display: inline-block;
+    margin:  25px auto;
+    color: black;
+}
+
+.linha li{
+    display: inline-block;
+    padding: 9px 14px;
+}
+
+.destaque{
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.destaque:hover{
+    padding-left: 3px;;
+}
+
+.habilidade_1{
+    font-size: 16px;
+}
+
+.habilidade_2{
+ font-size: 17px;
+}
+
+.habilidade_3{
+    font-size: 17px;
+}
+
+.habilidade_4{
+    font-size: 19px;
+}
+
