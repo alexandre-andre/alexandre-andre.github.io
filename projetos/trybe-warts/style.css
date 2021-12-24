@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Yusei Magic, sans-serif;
+}
+
+body {
+  background-color: rgb(220, 216, 216);
+}
+
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  height: 50px;
+  justify-content: space-between;
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-form {
+  display: flex;
+  align-self: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#nome-sobrenome {
+  display: flex;
+}
+
+#email-casa {
+  display: flex;
+  align-items: baseline;
+}
+
+.form-control {
+  width: 200px;
+  margin: 10px;
+}
+
+.form-control:nth-child( 3 ) {
+  width: 155px;
+}
+
+#div-familia {
+  display: flex;
+  flex-direction: column;
+}
+
+#div-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+#second-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+#conteudo-x {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#third-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fifth-group {
+  display: flex;
+}
+
+.btn {
+  background-color: rgb(70, 0, 70);
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(70, 0, 70, 0.8);
+}
+
+#submit-btn , #input-name , #input-lastname , #input-email , #house {
+  width: 100%;
+}
+
+footer {
+  color: white;
+  background-color: rgb(87, 87, 87);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#div-counter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+#counter {
+  display: flex;
+  position: absolute;
+}
+
+#textarea {
+  padding: 3px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(170, 170, 170, 0.5);
+  border-radius: 5px;
+}
+
+#textarea:focus {
+  background-color: rgb(70, 0, 70, 0.1);
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

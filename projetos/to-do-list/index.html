@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Projeto todo list</title>
+</head>
+<body>
+    
+  <div class="container">
+    <div class="text-center">
+      <header>
+        <h1 class="jumbotron text-center text-primary mt-5 p-5" id="title">Minha Lista de Tarefas</h1>
+        <p id="funcionamento" class="lead">Clique <u>duas vezes</u> em um item para marcá-lo como completo</p>
+      </header>
+    </div>
+    
+    <div>
+      <div class="row gap-2 form-row">
+        <div class="col-12 col-sm-8 form-group">
+          <input class="form-control form-control-md" type="text" id="texto-tarefa" placeholder="digite a tarefa">
+        </div>
+        <div class="col-12 col-sm-4 form-group">
+          <button class="form-control btn-outline-info" type="button" id="criar-tarefa">Adicionar</button>
+          <!-- <button type="reset" id="btn_reset" style="display: none;"></button> -->
+        </div>
+      </div>
+
+        <section class="mt-5">
+          <div class="row">
+            <div class="col-12 col-sm-8 col-lg-6 pd-2">
+              <ol id="lista-tarefas"></ol>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6 pd-2 text-center">
+              <button id="apaga-tudo" type="button" class="btn btn-danger btn-md mb-2">Apagar tudo
+                <img class="img-button ml-1" src="https://cdn-icons.flaticon.com/png/128/2514/premium/2514450.png?token=exp=1638051253~hmac=dc28ea313b1afc461a2aedebedde94a2" alt="lixeira">
+              </button>
+              <button id="remover-finalizados" type="button" class="btn btn-warning text-white mb-2">Riscado
+                <img class="img-button ml-4" src="https://cdn-icons.flaticon.com/png/128/839/premium/839571.png?token=exp=1638051253~hmac=fbcac8c1fda7324256b9458070f30502" alt="lixeira">
+              </button>
+              <button id="remover-selecionado" type="button" class="btn btn-warning text-white mb-2">Selecionado
+                <img class="img-button ml-1" src="https://cdn-icons.flaticon.com/png/128/839/premium/839571.png?token=exp=1638051253~hmac=fbcac8c1fda7324256b9458070f30502" alt="lixeira">
+              </button>
+              <button id="salvar-tarefas" type="button" class="btn btn-info text-white mb-2">Salvar
+                <img class="img-button ml-4" src="https://cdn-icons-png.flaticon.com/128/482/482459.png" alt="disket">
+              </button><br>
+              <button id="mover-cima" type="button" class="btn btn-outline-dark bg-info mary mb-2 border btn-img">
+                <img class="img-button" src="https://media2.giphy.com/media/UWmeyp8gX9BwIAeVd2/giphy.gif" alt="seta-cima">           
+              </button>
+              <button id="mover-baixo" type="button" class="btn btn-outline-dark bg-info mb-2 border btn-img">
+                <img class="img-button" style="transform: rotateX(180deg);" src="https://media2.giphy.com/media/UWmeyp8gX9BwIAeVd2/giphy.gif" alt="seta-baixo">
+              </button>
+            </div>
+          </div>
+        </section>
+        
+    </div>
+  </div>
+      
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title txt-primary" id="TituloModalCentralizado">Entrada vazia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Por favor, digite uma tarefa para validar o botão adicionar.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
