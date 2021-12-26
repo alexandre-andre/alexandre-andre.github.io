@@ -1,0 +1,37 @@
+input[type='text']:focus{
+    background-color: rgb(240, 202, 159);
+}
+
+button{
+    cursor: pointer;
+    width: 140px;
+}
+
+.btn-img{
+    width: 68px;
+}
+
+.img-button{
+    width: 25px;
+    height: 27px;
+}
+
+/* body{
+    background-image: url('https://pc.warface.com/promo/origins/data/img/fourth-screen-bg.png');
+} */
+
+
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_font-variant */
+#funcionamento{
+    font-family: 'Audiowide', sans-serif;
+    font-variant: small-caps;
+}
+
+.selected{
+    background-color: rgb(128, 128, 128);
+}
+
+.completed{
+    text-decoration: line-through solid rgb(0,0,0);
+}
